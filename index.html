@@ -1,0 +1,86 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Importing Boostrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <!-- Making A intial User Display at the start-->
+  <div class="log-form">
+    <h2>Enter Login details</h2>
+
+    <!-- The form starts here and has the properties that it needs Validation-->
+    <!-- Also novalidate means that browser shouldn't validate it-->
+    <form class= "main-form needs-validation" action="new.html" novalidate>
+    <div class="form-group">      
+      <div class="row justify-content-center">
+        <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
+        </span>
+        </div>
+      </div>
+
+      <!-- Next we Start Building the form fields with an intial icon and Making a 
+           form group.We also specify What the error messages are -->
+      
+      
+      <span class= "hint ml-3 mb-2"> Hint: It's your handle</span>    
+      <div class="form-group">
+        <div class="row username-row">
+          <span class="form-span"><i class="fa fa-user" aria-hidden="true"></i></span>
+        <input type="text" title="username" id="username" name="Username" placeholder="username" class = "form-control" required />
+        <label for="Username" class="label-name"></label>
+        <div class="invalid-feedback">
+          Wrong Username!
+          </div>
+      </div>
+      
+      <!-- Making a form-control item of password and specifying its invalid feedback output-->
+
+      <span class= "hint ml-3 mb-2"> Hint: dd-mm-yyyy (The day we met)</span>
+      <div class="form-group">
+        <div class="form-group">
+          <div class="row username-row">
+            <span class="form-span"><i class="fa fa-lock" aria-hidden="true"></i></span>
+            <input type="password" title="password" id = "txtPassword" placeholder="password" class = "form-control" required/>
+        <div class="invalid-feedback">
+          Wrong Password!
+          </div>    
+      </div>
+    </div>
+  </div>
+      
+      <!-- Making a form-control item of Submit Button-->
+      
+      <div class="form-group">
+        <div class="row  justify-content-center">
+          <div class="col-3">
+            <button type="submit" class="btn btn-primary" >Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <!-- Adding the JavaScript components of Bootstrap If the components that require 
+  JS can be imported as well -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <!-- Main.js Specifies the validation script for the form-->
+  <script src="main.js"></script>
+  
+  <!-- Beautify Ends -->
+  
+</body>
+</html>

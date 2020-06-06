@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 50%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 1);
+}
+
+form {
+  display: block;
+  text-align: bottom;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+/*The background span of top User Icon below Enter Your Details:*/
+.top-form {
+  position: absolute;
+  top: -3rem;
+  left: 12rem;
+  width: 60px;
+  height: 30px;
+  background: transparent;
+}
+
+/*The top User Icon below Enter Your Details:*/
+.top-form .fa{
+  color: black;
+}
+
+/*The Background for different icons like UserName,Email,Password etc. */
+.form-span {
+  position: absolute;
+  left:7px;
+  height: 38px;
+  width:40px;
+  background: linear-gradient(to right,#4CAF50,#00bcd4);
+}
+
+/*The icons like UserName,Email,Password etc. */
+.form-span .fa{
+  padding: 10px;
+  color: white;
+}
+
+/*All the fields of the form are shifted to right by 10px to accomodate icons*/
+.username-row {
+  margin-left: 10px;
+}
+
+.log-form {
+  width: 50vw;
+  top: calc(100px + 30vh);
+}
+
+.hint {
+  color: rgba(1, 1, 1, 0.5);
+}
